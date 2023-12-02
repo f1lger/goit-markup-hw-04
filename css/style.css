@@ -28,9 +28,11 @@ h3 {
 /* HEADER */
 
 .header {
+  margin: 0 auto;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  max-width: 1440px;
 }
 .header-container {
   display: flex;
@@ -63,7 +65,6 @@ h3 {
   /* Positioning */
   position: relative;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
@@ -71,31 +72,32 @@ h3 {
 }
 .list-link {
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-link::after {
+.list-link::after:hover {
   content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
+  background-color: #2e2f42;
   border-radius: 2px;
+  text-decoration: underline;
 }
 .list-link:hover {
   color: #404bbf;
 }
 .list-link:focus {
-  text-decoration: underline;
   color: #404bbf;
+  text-decoration: underline;
 }
 .contacts {
   font-style: normal;
@@ -117,10 +119,10 @@ h3 {
   padding: 24px 0;
 }
 
-/* .contacts-link:hover {
+.contacts-link:hover {
   color: #404bbf;
 }
-.contacts-link:focus {
+/* .contacts-link:focus {
   color: #404bbf;
 } */
 /* MAIN */
@@ -128,6 +130,7 @@ h3 {
 /* SECTION 1 */
 
 .dark-bg {
+  margin: 0 auto;
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -212,12 +215,14 @@ h3 {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
+  margin-bottom: 8px;
 
   /* Visual */
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
 }
+
 .list-two-item {
   width: calc((100% - 72px) / 4);
 }
