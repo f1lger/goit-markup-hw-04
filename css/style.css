@@ -294,10 +294,11 @@ h3 {
   justify-content: center;
   gap: 24px;
 }
-.social-link {
+.social-item {
   width: 40px;
   height: 40px;
 }
+
 .social-link {
   display: flex;
   align-items: center;
@@ -312,7 +313,7 @@ h3 {
   background-color: #404bbf;
 }
 .svg {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 /* SECTION 4 */
 
