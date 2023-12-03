@@ -345,9 +345,6 @@ h3 {
   position: relative;
   overflow: hidden;
 }
-.image-cont:hover {
-  transform: translateY(0%);
-}
 .image-text {
   /* Box model */
   width: 100%;
